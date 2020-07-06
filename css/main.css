@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*every edited part, such as body or p or blockquote is 
+considered a ruleset*/
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+}
+body{
+    margin: 0;
+    /* the following says first use Montserrat, if the user
+    doesn't have that resort to any sans-serif font they own*/
+    font-family: 'Montserrat', "sans-serif";
+    background-color: #222425;
+}
+
+p{
+    /*default font for the body for example is 16px, 1 em is 
+    equivalent to 16px*/
+    font-size: 0.9em;
+    /*space betweent the lines*/
+    line-height: 1.6em;
+}
+
+ul {
+    /*gets rid of the list dots*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color:#181818; 
+    z-index: 12;
+    
+}
+
+nav {
+    background-color:#181818;  
+}
+
+nav ul{
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    padding: 0.8em;
+    
+}
+nav ul li{
+    margin-right: 6em;
+}
+nav ul li a{
+    color: rgb(87, 85, 85);
+    font-size: 20pt;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+.arr{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.grid-area{
+    height: 100vh;
+    margin: 0 4em 3em 4em;
+    color: white;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "box1 box2"
+    "box3 box2";
+
+}
+
+.grid-area h2{
+    grid-area: box1;
+    font-size: 5em;
+    margin: 1.5em 0 0 1em;
+}
+
+.me{
+    grid-area: box2;
+    width: 40em;
+    z-index: 10;
+}
+
+.contact{
+
+    grid-area: box3;
+    color: rgb(221, 88, 88);
+    /*gets rid of the underline*/
+    text-decoration: none;
+    width: 6em;
+    height: 1em;
+    padding: 1em;
+    background-color: #222425;
+    font-size: 25pt;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(221, 88, 88);
+    margin: 2em 0 0 2.6em;
+
+}
+
+
+.grid-area p{
+    grid-area: box1;
+    font-size: 15pt;
+    font-style: italic;
+    color: rgb(87, 85, 85);
+    margin: 15em 0 0 4.2em;
+}
+
+.box{
+    width: 100%;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(221, 88, 88);
+    background-color: #222425;
+}
+.box h1{
+    color: rgba(255, 255, 255, 0.123);
+    z-index: -1;
+    font-size: 150pt; 
+    margin: 0.3em 0 0 0;
+
+}
+
+.about{
+    margin: 0 auto 8em auto;
+    width: 65em;
+    background-color: rgb(87, 85, 85);
+    color: white;
+    align-content: center;
+    padding: 1em;
+    border: rgb(221, 88, 88) 2px solid;
+}
+.about p{
+    font-size: 13pt;
+}
+
+.arrow{
+    background-color: #222425;  
+    width: 100%;
+}
+.arrow img{
+    width: 40%;
+    z-index: 0;
+    animation: move 0.7s infinite alternate;
+}
+@keyframes move {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+.skills{
+    margin: 0 auto 8em auto;
+    width: 65em;
+    background-color: rgb(87, 85, 85);
+    color: white;
+    align-content: center;
+    padding: 1em;
+    border: rgb(221, 88, 88) 2px solid;
+}
+.skills p{   
+    font-size: 13pt;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cocktail{
+    color: rgb(221, 88, 88);
+    /*gets rid of the underline*/
+    text-decoration: none;
+    display: block;
+    width: 5em;
+    padding: 0.7em;
+    background-color: #222425;
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bolder;
+    /*border-radius: 20px;*/
+    border: solid 5px rgb(221, 88, 88);
+    margin: 0 0 2em auto;  
+}
+
+.proj{
+    color: rgb(221, 88, 88);
+    /*gets rid of the underline*/
+    text-decoration: none;
+    display: block;
+    width: 5em;
+    padding: 0.7em;
+    background-color: #222425;
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bolder;
+    /*border-radius: 20px;*/
+    border: solid 5px rgb(221, 88, 88);
+    margin: 0 auto 2em auto;  
+}
+.weather{
+    color: rgb(221, 88, 88);
+    /*gets rid of the underline*/
+    text-decoration: none;
+    display: block;
+    width: 5em;
+    padding: 0.7em;
+    background-color: #222425;
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bolder;
+    /*border-radius: 20px;*/
+    border: solid 5px rgb(221, 88, 88);
+    margin: 0 auto 2em 0;  
+
+}
+
+.cocktail:hover{
+    transition: 1s;
+    background-image: url(/imgs/soda-1550316_640.jpg);
+    background-color: none;
+    color: rgb(214, 138, 87);
+    border-color: rgb(214, 138, 87);
+
+    
+}
+.weather:hover{
+    transition: 1s;
+    background-image: url(/imgs/landscape-1844227.svg);
+    background-size: cover;
+    color: rgb(40, 255, 255);
+    border-color: rgb(40, 255, 255);
+    
+}
+
+.project{
+    margin: 0 auto 8em auto;
+    width: 65em;
+    background-color: rgb(87, 85, 85);
+    color: white;
+    align-content: center;
+    padding: 1em;
+    border: rgb(221, 88, 88) 2px solid;  
+}
+.project p{
+    font-size: 13pt;
+}
+
+.contact-me{
+    background-color: #222425;
+    margin: auto;
+    padding: 2em 2em;
+}
+.contact-me h1{
+    color: white;
+    text-align: center;
+}
+.contact-me ul li{
+    color: rgb(87, 85, 85);
+    text-align: center;
+}
+.contact-me ul li a{
+    color: rgb(87, 85, 85);
+    text-decoration: none;
+}
+.contact-me ul li a:hover{
+    color: white;
+}
+@media only screen and (max-width: 500px){
+
+    
+}
+
+
+
+/*
+.bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+div[class^='tag-'] {
+    clip-path: polygon(75% 0%, 100% 50%);
+    width: 120px;
+    height: 30px;
+    background-color: rgb(128, 21, 21);
+    margin-right: 30px;
+}
+
+div[class^='tag-'] p{
+    color: white;
+    text-align: left;
+    padding: 5px;
+    font-size:0.5em;
+
+}
+*/
+
+
+
+

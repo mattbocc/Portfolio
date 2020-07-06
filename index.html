@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Boccalon</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div class="grid-area">
+        <h2>Matthew <br> Boccalon</h2>
+
+        <p>Computer Science Student</p>
+
+        <img src="imgs/redArrow.png" alt="Pic" class="me">
+        
+        <a href="#cont" class="contact">Contact Me</a>
+    </div>
+
+    <div class="box" id="about">
+        <h1>About</h1>
+        <div class="about">
+            <p>
+                I'm a 20 year old 3rd year student studying computer science at York University. I have advanced
+                knowledge in several different programming languages as well as advanced knowledge in various data structures.
+                Over my three years I have obtained a great understanding of mobile app environments such as Android Studio and
+                Xcode. I have a passion for computer science, I love the trial and error and problem solving aspects of it
+                which makes learning extremely enjoyable. I also get a large satisfaction, like I am sure most other computer
+                scientist's in seeing progress and the final results of my projects. I seek to continue to further my knowledge 
+                in the industry, always trying to learn more and more on my own on top of what I learn at from my studies at York University.
+            </p>
+        </div>
+    </div>
+
+    <div class="arrow">
+        <img src="imgs/redArrow.png" alt="scroll" class="arr">
+    </div>
+
+    <div class="box" id="skills">
+        <h1>Skills</h1>
+        <div class="skills">
+            <p>
+                I am highly proficient in both Java and C, knowing their workings on a high level and have a very good
+                understanding of complex ideas within the two. I also have plenty of expierence with website design using HTML, CSS, 
+                and Javascript. As mentioned before I also have experience in mobile app environments. I learned the workings of 
+                Android Studio through studies at York University and have taken that knowledge to make some of 
+                my own apps within the environment. I also have experience in Python which I continue to experiment
+                with and practice on my free time. I have a tremendous understanding of various data structures as well.  
+                I also have an intermediate understanding of Unix operating system. I continue to learn everyday and hunger 
+                for knowledge. I know there is always more to understand and look to continue to expand what I know.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="arrow">
+        <img src="imgs/redArrow.png" alt="scroll" class="arr">
+    </div>
+
+    <div class="box" id="project">
+        <h1>Projects</h1>
+        <div class="project">
+            <p>
+
+            </p>
+        </div>
+        <div class="buttons">
+            <a href="https://mattbocc.github.io/CocktailApp/" target="_blank" class="cocktail">Cocktail App</a>
+            <a href="https://github.com/mattbocc" target="_blank" class="proj">Github</a>
+            <a href=" https://mattbocc.github.io/Weather-App/" target="_blank" class="weather">Weather App</a>
+        </div>
+    </div>
+
+
+
+    <div class="contact-me" id="cont">
+        <h1>Contact Me</h1>
+        <ul>
+            <li><a href="mailto:matthew.boccalon@live.ca">matthew.boccalon@live.ca</a></li>
+            <li><a href="https://www.linkedin.com/in/matthew-boccalon-1b96791a2" target="_blank">LinkedIn</a></li>
+            <br />
+            <br />
+            <li>Toronto, Ontario</li>
+        </ul>
+        <p></p>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+
+</body>
+
+</html>
