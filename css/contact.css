@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+}
+body{
+    margin: 0;
+    font-family: 'Montserrat', "sans-serif";
+    background-color: #222425;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color:#181818; 
+    z-index: 12;
+    height: 4.5em;
+    
+}
+
+nav {
+    background-color:#181818;  
+}
+
+nav ul{
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    padding: 0.8em;
+    
+}
+nav ul li{
+    margin-right: 6em;
+}
+nav ul li a{
+    color: rgb(87, 85, 85);
+    font-size: 20pt;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+.contact-nav{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+.contact-nav li{
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: 0.5s; 
+    
+}   
+
+.contact-nav li:hover{
+    background: rgba(221, 88, 88, 0.16);
+}
+
+.contact-nav li span{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 4px solid black;
+    transition: 0.5s;
+    border: 2px solid rgb(221, 88, 88);
+}
+/*The previous and the following could be combined into one*/
+.contact-nav li.prev span{
+    top: 49%;
+    right: 35%;
+    transform: translateY(-50%) rotate(45deg);
+    border-right: none;
+    border-top: none;
+}
+.contact-nav li.prev:hover span{
+    left: 32%;
+}
+/*cool with everything before this*/
+.contact-nav li.prev span:before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: rgb(221, 88, 88);
+    transform-origin: left;
+    transform: rotate(-45deg) translate(-22px ,6px) scale(0);
+    transition: 0.5s;
+}
+.contact-nav li.prev:hover span:before{
+    transform: rotate(-45deg) translate(-22px ,6px) scale(1);
+}
+
+form{
+    margin: 4em 20em;
+    color: white;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border-color: rgb(221, 88, 88);
+}
+input{
+    margin-bottom: 1em;       
+}
+#message{
+    height: 4em;
+    text-align: left;
+}
+#submit{
+    width: 7em;
+    height: 2.5em;
+    margin: 1em auto;
+}
+.error{
+    color: rgb(87, 85, 85);
+    margin: 0.25em 0
+}
+.success{
+    font-size: 16px;
+    color: red;
+    margin: 0.25 0;
+    text-align: center;
+}
+

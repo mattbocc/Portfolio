@@ -33,6 +33,7 @@ header{
     width: 100%;
     background-color:#181818; 
     z-index: 12;
+    height: 4.5em;
     
 }
 
@@ -248,7 +249,7 @@ nav ul li a:hover{
 }
 
 .project{
-    margin: 0 auto 8em auto;
+    margin: 0 auto 4em auto;
     width: 65em;
     background-color: rgb(87, 85, 85);
     color: white;
@@ -280,11 +281,13 @@ nav ul li a:hover{
 .contact-me ul li a:hover{
     color: white;
 }
+
+
+
 @media only screen and (max-width: 500px){
 
     
 }
-
 
 
 /*
