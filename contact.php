@@ -1,4 +1,5 @@
 <?php include('contact_back_end.php');?>
+
 <link rel="stylesheet" href="css/contact.css">
 <title>Contact</title>
 
@@ -9,7 +10,7 @@
         </ul>
     </nav>
 </header> <br><br>
-
+<!--$_SERVER['PHP_SELF']; or the below (test both)-->
 <form action="<?= $_SERVER['PHP_SELF']; ?>" method="POST">
     <fieldset>
         <label for="first-name">First Name:</label>

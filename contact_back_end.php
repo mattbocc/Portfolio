@@ -1,4 +1,5 @@
 <?php
+
 $fname_error = $lname_error = $company_error = $email_error = "";
 $fname = $lname = $company = $email = $message = $success = "";
 
@@ -64,6 +65,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         if(mail($to, $subject, $message_to_me, "From: justmatt6@hotmail.com")){
             $success = "Thank you for reaching out, I will get back to you within 48 hours!";
         }
+        else{
+            $success = "Unsuccessful, recheck the forum";
+        }
 
         $fname = $lname = $company = $email = "";
     }
@@ -71,10 +75,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     
 }
-
-
-
-
 
 
 

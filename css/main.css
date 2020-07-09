@@ -232,16 +232,15 @@ nav ul li a:hover{
 
 .cocktail:hover{
     transition: 1s;
-    background-image: url(https://pixabay.com/get/57e5d0434953aa14f1dc8460c62f347b173adfe44e507440712f7fd69049c0_640.jpg);
+    background-image: url(../imgs/soda-1550316_640.jpg);
     background-color: none;
     color: rgb(214, 138, 87);
-    border-color: rgb(214, 138, 87);
-
-    
+    border-color: rgb(214, 138, 87);  
 }
+
 .weather:hover{
     transition: 1s;
-    background-image: url(https://pixabay.com/get/57e8d1474850ab14ead9837ec22a327f1422dfe05a55714d772973dc.svg);
+    background-image: url(../imgs/landscape-1844227.svg);
     background-size: cover;
     color: rgb(68, 163, 163);
     border-color: rgb(68, 163, 163);
