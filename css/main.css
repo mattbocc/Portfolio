@@ -525,7 +525,7 @@ nav ul li a:hover{
     .pic{
         height: 16em;
         width: 7em;
-        margin: 3em 0 0 3em 
+        margin: 4em 0 0 3em 
     }
     
     .me{
@@ -535,15 +535,16 @@ nav ul li a:hover{
     .grid-area{
         margin-left: 2em;
         margin-right: 0;
+        margin-top: 2em;
     }
     .grid-area h2{
         font-size: 2em;
     }
     .grid-area p{
-        font-size: 9pt;
+        font-size: 8pt;
     }
     .contact{
-        font-size: 15pt;
+        font-size: 13pt;
         
     }
 
