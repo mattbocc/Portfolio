@@ -77,7 +77,6 @@ nav ul li a:hover{
 
 .grid-area h2{
     color: white;
-    grid-area: box1;
     font-size: 5em;
     margin: 1.5em 0 0 0;
 }
@@ -454,7 +453,8 @@ nav ul li a:hover{
         font-size: 11pt;
     }
     .contact{
-        font-size: 10pt;       
+        font-size: 11pt;  
+        padding: 2em;     
     }
 
 
@@ -477,7 +477,7 @@ nav ul li a:hover{
         margin-bottom: 4em;
     }
     .about p{
-        font-size: 9pt;
+        font-size: 10pt;
     }
 
     .skills{
