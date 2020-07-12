@@ -400,20 +400,20 @@ nav ul li a:hover{
     .cocktail{     
         width: 4.2em;
         font-size: 18pt;
-        border: solid 3px rgb(221, 88, 88);
+        border-width: 3px;
         margin: 0 auto 2em auto;  
     }
     
     .proj{
         width: 4.2em;
         font-size: 18pt;
-        border: solid 3px rgb(221, 88, 88);
+        border-width: 3px;
         margin: 0 auto 2em auto;  
     }
     .weather{
         width: 4.2em;
         font-size: 18pt;
-        border: solid 3px rgb(221, 88, 88);
+        border-width: 3px;
         margin: 0 auto 2em auto;    
     }
 
@@ -497,20 +497,17 @@ nav ul li a:hover{
     .cocktail{     
         width: 4em;
         font-size: 14pt;
-        border: solid 3px rgb(221, 88, 88);
         margin: 0 auto 2em auto;  
     }
     
     .proj{
         width: 4em;
         font-size: 14pt;
-        border: solid 3px rgb(221, 88, 88);
         margin: 0 auto 2em auto;  
     }
     .weather{
         width: 4em;
         font-size: 14pt;
-        border: solid 3px rgb(221, 88, 88);
         margin: 0 auto 2em auto;    
     }
 
@@ -528,7 +525,7 @@ nav ul li a:hover{
     .pic{
         height: 16em;
         width: 7em;
-        margin: 2em 0 0 3em 
+        margin: 3em 0 0 3em 
     }
     
     .me{
@@ -565,20 +562,17 @@ nav ul li a:hover{
     .cocktail{     
         width: 4em;
         font-size: 12pt;
-        border: solid 2px rgb(221, 88, 88);
         margin: 0 auto 2em auto;  
     }
     
     .proj{
         width: 4em;
         font-size: 12pt;
-        border: solid 2px rgb(221, 88, 88);
         margin: 0 auto 2em auto;  
     }
     .weather{
         width: 4em;
         font-size: 12pt;
-        border: solid 2px rgb(221, 88, 88);
         margin: 0 auto 2em auto;    
     }
 
