@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-/*every edited part, such as body or p or blockquote is 
-considered a ruleset*/
 html {
     scroll-behavior: smooth;
     margin: 0;
@@ -44,7 +42,6 @@ nav {
 nav ul{
     display: flex;
     text-align: center;
-    font-size: 20px;
     padding: 0.8em;
     
 }
@@ -61,41 +58,41 @@ nav ul li a:hover{
     color: white;
 }
 
-.arr{
-    display: block;
-    width: 50%;
-    margin: auto;
-}
+
 
 .grid-area{
-    height: 100vh;
-    margin: 0 4em 3em 4em;
+    margin: 0 4em 3em 8em;
     color: white;
-    display: grid;
-    align-content: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "box1 box2"
-    "box3 box2";
+    align-content: center;  
+    display: flex;
+    flex-direction: column;
 
+}
+
+.row-flex{
+    display: flex;
+    flex-direction: row;
+    margin: 0 4em 3em 3em;
 }
 
 .grid-area h2{
+    color: white;
     grid-area: box1;
     font-size: 5em;
-    margin: 1.5em 0 0 1em;
+    margin: 1.5em 0 0 0;
+}
+.pic{
+    height: 30em;
+    width: 15em;
+    margin: 5em 0 3em 10em 
 }
 
 .me{
-    grid-area: box2;
-    width: 40em;
-    z-index: 10;
+    width: 100%;
+    height: 100%;
 }
 
 .contact{
-
-    grid-area: box3;
     color: rgb(221, 88, 88);
     /*gets rid of the underline*/
     text-decoration: none;
@@ -108,17 +105,16 @@ nav ul li a:hover{
     border-style: solid;
     border-width: 5px;
     border-color: rgb(221, 88, 88);
-    margin: 2em 0 0 2.6em;
+    margin: 2em 0 0 0;
 
 }
 
 
 .grid-area p{
-    grid-area: box1;
     font-size: 15pt;
     font-style: italic;
     color: rgb(87, 85, 85);
-    margin: 15em 0 0 4.2em;
+    margin: 0 0 0 0;
 }
 
 .box{
@@ -154,6 +150,8 @@ nav ul li a:hover{
     width: 100%;
 }
 .arrow img{
+    display: block;
+    margin: auto;
     width: 40%;
     z-index: 0;
     animation: move 0.7s infinite alternate;
@@ -186,7 +184,7 @@ nav ul li a:hover{
 }
 
 .cocktail{
-    color: rgb(221, 88, 88);
+    color: rgb(214, 138, 87);
     /*gets rid of the underline*/
     text-decoration: none;
     display: block;
@@ -196,8 +194,10 @@ nav ul li a:hover{
     font-size: 25pt;
     font-weight: bolder;
     /*border-radius: 20px;*/
-    border: solid 5px rgb(221, 88, 88);
-    margin: 0 0 2em auto;  
+    border: solid 5px rgb(214, 138, 87);
+    margin: 0 auto 2em auto;  
+    background-image: url(../imgs/soda-1550316_640.jpg);
+    background-size: 300px 200px;
 }
 
 .proj{
@@ -215,7 +215,6 @@ nav ul li a:hover{
     margin: 0 auto 2em auto;  
 }
 .weather{
-    color: rgb(221, 88, 88);
     /*gets rid of the underline*/
     text-decoration: none;
     display: block;
@@ -225,27 +224,14 @@ nav ul li a:hover{
     font-size: 25pt;
     font-weight: bolder;
     /*border-radius: 20px;*/
-    border: solid 5px rgb(221, 88, 88);
-    margin: 0 auto 2em 0;  
-
-}
-
-.cocktail:hover{
-    transition: 1s;
-    background-image: url(../imgs/soda-1550316_640.jpg);
-    background-color: none;
-    color: rgb(214, 138, 87);
-    border-color: rgb(214, 138, 87);  
-}
-
-.weather:hover{
-    transition: 1s;
+    border: solid 5px rgb(68, 163, 163);
+    margin: 0 auto 2em auto;  
     background-image: url(../imgs/landscape-1844227.svg);
     background-size: cover;
     color: rgb(68, 163, 163);
-    border-color: rgb(68, 163, 163);
-    
+
 }
+
 
 .project{
     margin: 0 auto 4em auto;
@@ -283,9 +269,334 @@ nav ul li a:hover{
 
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 1100px){ 
+    
+    .pic{
+        height: 26em;
+        width: 15em;
+        margin: 5em 0 3em 10em 
+    }
+    
+    .me{
+        width: 100%;
+        height: 100%;
+    }
+    .row-flex{
+        margin: 0 0em 3em 0em;
+    }
+    .grid-area h2{
+        font-size: 4em;
+        margin: 1.5em 0 0 0;
+    }
+    .box h1{
+        font-size: 130pt; 
+    }
+    
+    .about{
+        width: 40em;
+    }
+    .about p{
+        font-size: 13pt;
+    }
+
+    .skills{
+        width: 40em;
+    }
+    .skills p{   
+        font-size: 13pt;
+    }
+
+    .project{
+        width: 40em;     
+    }
+    .project p{
+        font-size: 13pt;
+    }
+}
+
+@media only screen and (max-width: 900px){
+
+    .pic{
+        height: 20em;
+        width: 11em;
+        margin: 5em 0 3em 5em 
+    }
+    
+    .me{
+        width: 100%;
+        height: 100%;
+    }
+    .grid-area{
+        margin: 0 4em 3em 6em;
+    }
+    .grid-area h2{
+        margin: 1.5em 0 0 0;
+    }
+    .contact{
+        font-size: 18pt;
+        border: rgb(221, 88, 88) 2px solid;  
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 750px){
+
+    .pic{
+        height: 20em;
+        width: 11em;
+        margin: 5em 0 3em 3em 
+    }
+    
+    .me{
+        width: 100%;
+        height: 100%;
+    }
+    .grid-area{
+        margin-left: 2em;
+        margin-right: 1em;
+    }
+    
+    .contact{
+        font-size: 18pt;     
+    }
+    
+    nav ul li{
+        margin-right: 4em;
+    }
+    nav ul li a{
+        font-size: 16pt;
+    }
+    header{
+        height: 3em;
+    }
+
+    .box h1{
+        font-size: 90pt; 
+    }
+    
+    .about{
+        width: 30em;
+    }
+    .about p{
+        font-size: 10pt;
+    }
+
+    .skills{
+        width: 30em;
+    }
+    .skills p{   
+        font-size: 10pt;
+    }
+
+    .project{
+        width: 30em;     
+    }
+    .project p{
+        font-size: 10pt;
+    }
+
+    .cocktail{     
+        width: 4.2em;
+        font-size: 18pt;
+        border: solid 3px rgb(221, 88, 88);
+        margin: 0 auto 2em auto;  
+    }
+    
+    .proj{
+        width: 4.2em;
+        font-size: 18pt;
+        border: solid 3px rgb(221, 88, 88);
+        margin: 0 auto 2em auto;  
+    }
+    .weather{
+        width: 4.2em;
+        font-size: 18pt;
+        border: solid 3px rgb(221, 88, 88);
+        margin: 0 auto 2em auto;    
+    }
+
+    .arrow img{
+        width: 50%;
+    }
+    @keyframes move {
+        0%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(30px);
+        }
+    }
+
+}
+
+@media only screen and (max-width: 540px){
+
+    .pic{
+        height: 16em;
+        width: 8em;
+        margin: 6em 0 0 3em 
+    }
+    
+    .me{
+        width: 100%;
+        height: 100%;
+    }
+    .grid-area{
+        margin-left: 1em;
+        margin-right: 0;
+    }
+    .grid-area h2{
+        font-size: 3em;
+    }
+    .grid-area p{
+        font-size: 11pt;
+    }
+    .contact{
+        font-size: 18pt;        
+    }
+
+
+    nav ul li{
+        margin-right: 2.7em;
+    }
+    nav ul li a{
+        font-size: 15pt;
+    }
+    header{
+        height: 3em;
+    }
+
+    .box h1{
+        font-size: 55pt; 
+    }
+    
+    .about{
+        width: 18em;
+        margin-bottom: 4em;
+    }
+    .about p{
+        font-size: 9pt;
+    }
+
+    .skills{
+        width: 18em;
+    }
+    .skills p{   
+        font-size: 9pt;
+    }
+
+    .project{
+        width: 18em;     
+    }
+    .project p{
+        font-size: 9pt;
+    }
+
+    .cocktail{     
+        width: 4em;
+        font-size: 14pt;
+        border: solid 3px rgb(221, 88, 88);
+        margin: 0 auto 2em auto;  
+    }
+    
+    .proj{
+        width: 4em;
+        font-size: 14pt;
+        border: solid 3px rgb(221, 88, 88);
+        margin: 0 auto 2em auto;  
+    }
+    .weather{
+        width: 4em;
+        font-size: 14pt;
+        border: solid 3px rgb(221, 88, 88);
+        margin: 0 auto 2em auto;    
+    }
 
     
+
+    
+
+
+}
+
+
+
+@media only screen and (max-width: 400px){
+
+    .pic{
+        height: 16em;
+        width: 7em;
+        margin: 2em 0 0 3em 
+    }
+    
+    .me{
+        width: 100%;
+        height: 100%;
+    }
+    .grid-area{
+        margin-left: 2em;
+        margin-right: 0;
+    }
+    .grid-area h2{
+        font-size: 2em;
+    }
+    .grid-area p{
+        font-size: 9pt;
+    }
+    .contact{
+        font-size: 15pt;
+        
+    }
+
+    nav ul li{
+        margin-right: 2.5em;
+    }
+    nav ul li a{
+        font-size: 13pt;
+    }
+    header{
+        height: 3em;
+    }
+
+
+
+    .cocktail{     
+        width: 4em;
+        font-size: 12pt;
+        border: solid 2px rgb(221, 88, 88);
+        margin: 0 auto 2em auto;  
+    }
+    
+    .proj{
+        width: 4em;
+        font-size: 12pt;
+        border: solid 2px rgb(221, 88, 88);
+        margin: 0 auto 2em auto;  
+    }
+    .weather{
+        width: 4em;
+        font-size: 12pt;
+        border: solid 2px rgb(221, 88, 88);
+        margin: 0 auto 2em auto;    
+    }
+
+    .arrow img{
+        width: 55%;
+    }
+    @keyframes move {
+        0%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(20px);
+        }
+    }
+
+
+
+
 }
 
 
