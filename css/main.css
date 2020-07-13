@@ -95,8 +95,8 @@ nav ul li a:hover{
     color: rgb(221, 88, 88);
     /*gets rid of the underline*/
     text-decoration: none;
+    text-align: center;
     width: 6em;
-    height: 1em;
     padding: 1em;
     background-color: #222425;
     font-size: 25pt;
@@ -454,7 +454,8 @@ nav ul li a:hover{
     }
     .contact{
         font-size: 11pt;  
-        padding: 2em;     
+        padding: 2em; 
+        width: 7em;    
     }
 
 
