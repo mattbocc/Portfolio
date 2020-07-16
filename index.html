@@ -4,129 +4,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
     <title>Matthew Boccalon</title>
-    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#project">Projects</a></li>
+
+    <nav>
+        <div class="nav-wrapper blue lighten-2">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+                <li><a href="#about" class="links">About</a></li>
+                <li><a href="#projects" class="links">Projects</a></li>
+                <li><a href="#contact" class="links">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-    <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
-    <div class="row-flex">
-        <div class="grid-area">
-            <h2>Matthew <br> Boccalon</h2>
-            <p>Computer Science Student</p>
-            <!--href = "contact.php" when I host elsewhere-->
-            <a href="#cont" class="contact">Contact Me</a>
         </div>
+    </nav>
 
-        
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="imgs/Toronto.jpg" alt="buildings"></div>
     </div>
-
-
-    <div class="box" id="about">
-        <h1>About</h1>
-        <div class="about">
-            <p>
-                I'm a 20 year old 3rd year student studying computer science at York University. I have advanced
-                knowledge in several different programming languages as well as advanced knowledge in various data
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header" id="about">Matthew Boccalon</h2>
+            <p class="grey-text text-darken-3 lighten-3">
+                I'm a 20 year old second year student studying computer science at York University. I have advanced
+                knowledge in several different programming languages as well as a great understanding of many different
+                data
                 structures.
-                Over my three years I have obtained a great understanding of mobile app environments such as Android
-                Studio. I have a passion for computer science, I love the trial and error and problem solving
+                Over my two years I have obtained a great understanding of mobile app environments, web design, software development. 
+                I have a passion for computer science, I love the trial and error and problem solving
                 aspects of
                 it
                 which makes learning extremely enjoyable. I also get a large satisfaction, like I am sure most other
                 computer
                 scientist's in seeing progress and the final results of my projects. I seek to continue to further my
                 knowledge
-                in the industry, always trying to learn more and more on my own on top of what I learn at from my
-                studies at York University.
+                in the industry, always trying to learn more on my own on top of what I learn at from my
+                studies at York University. Besides my studies I'm a hockey coach for a competitive vaughan hockey team
+                as well as a heavy gym goer. My mental and physical health are always my top priority.
             </p>
         </div>
     </div>
-
-    <div class="arrow">
-        <img src="imgs/redArrow.png" alt="scroll" class="arr">
+    <div class="parallax-container">
+        <div class="Matthew Boccalon"><img src="imgs/motherBoard.jpg" alt="computer"></div>
     </div>
-
-    <div class="box" id="skills">
-        <h1>Skills</h1>
-        <div class="skills">
-            <p>
+    <div class="section white">
+        <div class="row container">
+            <p class="grey-text text-darken-3 lighten-3">
                 I am highly proficient in both Java and C, knowing their workings on a high level and have a very good
                 understanding of complex ideas within the two. I also have plenty of expierence with website design
                 using HTML, CSS,
-                and Javascript. As mentioned before I also have experience in mobile app environments. I learned the
-                workings of
-                Android Studio through studies at York University and have taken that knowledge to make some of
-                my own apps within the environment. I also have experience in Python which I continue to experiment
-                with and practice on my free time. I have a tremendous understanding of various data structures as well.
+                and Javascript. As mentioned before I also have experience in mobile app environments as well. I have
+                experience in Python which I continue to experiment
+                with and practice on my free time.
                 I also have an intermediate understanding of Unix operating system. I continue to learn everyday and
                 hunger
                 for knowledge. I know there is always more to understand and look to continue to expand what I know.
-            </p>
-        </div>
-    </div>
-
-
-    <div class="arrow">
-        <img src="imgs/redArrow.png" alt="scroll" class="arr">
-    </div>
-
-    <div class="box" id="project">
-        <h1>Projects</h1>
-        <div class="project">
-            <p>
-                During my time so far as a computer science student I have developed many projects from web
-                applications
-                to Android Apps to Python projects and the list goes on. In my projects I try to demonstrate at least a
-                glimpse of
-                what I am capable of, from using API's, designing in mobile app environments and using data structures.
-                Below is a link to my github where you can find the source code to all my projects as well as links to
+                Below is a link to my github where you can find the source code to some of my projects as well as links to
                 two
                 of my favourite web applications I've created.
             </p>
         </div>
-        <div class="buttons">
-            <a href="https://mattbocc.github.io/CocktailApp/" target="_blank" class="cocktail">Cocktail App</a>
-            <a href="https://github.com/mattbocc" target="_blank" class="proj">Github</a>
-            <a href=" https://mattbocc.github.io/Weather-App/" target="_blank" class="weather">Weather App</a>
+    </div>
+
+
+    <div class="container">
+        <div class="row" id="projects">
+            <div class="col s8 m4">
+                <div class="card large">
+                    <div class="card-image">
+                        <img src="imgs/photography-of-body-of-water-and-mountains-1544880.jpg" alt="sky">
+                        <span class="card-title">Weather App</span>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            A weather app made using geolocation and a weather API to find your latitude and
+                            longitudine coordinates
+                            to track the weather near you.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href=" https://mattbocc.github.io/Weather-App/" target="_blank">This is a link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s8 m4">
+                <div class="card large">
+                    <div class="card-image">
+                        <img src="imgs/man-in-black-shirt-sitting-in-front-of-computer-3861959.jpg" alt="code">
+                        <span class="card-title ">Github</span>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            My Github where you can find more of my projects.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/mattbocc" target="_blank">This is a link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s8 m4">
+                <div class="card large">
+                    <div class="card-image">
+                        <img src="imgs/photo-of-a-glass-of-negroni-cocktail-1304540.jpg" alt="glass">
+                        <span class="card-title">Cocktail App</span>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            This is a cocktail app that allows you to either search drinks to find ingredients to make
+                            such
+                            drink or search an ingredient to find what drinks can be made with it.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://mattbocc.github.io/CocktailApp/" target="_blank">This is a link</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 
 
-    <div class="contact-me" id="cont">
-        <h1>Contact Me</h1>
-        <ul>
-            <li><a href="mailto:matthew.boccalon@live.ca">matthew.boccalon@live.ca</a></li>
-            <li><a href="https://www.linkedin.com/in/matthew-boccalon-1b96791a2" target="_blank">LinkedIn</a></li>
-            <br><br>
-            <li>Toronto, Ontario</li>
-        </ul>
-        <p></p>
-    </div>
 
+
+
+
+
+    <footer class="page-footer blue lighten-2" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h6 class="white-text">Consider reaching out to me any time with questions or concerns!</h6>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Contact</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3"
+                                href="mailto:matthew.boccalon@live.ca">matthew.boccalon@live.ca</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.linkedin.com/in/matthew-boccalon-1b96791a2"
+                                target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Matthew Boccalon
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
     <script>
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        })
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+        });
+
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+
     </script>
-
-
 </body>
 
 </html>
